@@ -78,6 +78,437 @@
 
     <hr class="mt-5 mb-4">
 
+    <p>Examples of the Yukon.ca Design System in action:</p>
+
+    <ul>
+      <li><a href="https://yukon.ca" title="Yukon.ca">Yukon.ca</a></li>
+      <li><a href="https://service.yukon.ca" title="Service.Yukon.ca">Service.Yukon.ca</a></li>
+      <li><a href="https://open.yukon.ca/data" title="Open data">Open data</a></li>
+      <li><a href="https://yukongovernment.hua.hrsmart.com/hr/ats/JobSearch/viewAll" title="Job board">Job board</a>
+      </li>
+      <li><a href="https://ihs.gov.yk.ca/find-a-family-doctor/f?p=100:1" title="Find a family doctor">Find a family
+          doctor</a></li>
+      <li><a href="https://guide.yukon.ca" title="Digital service delivery guide">Digital service delivery guide</a>
+      </li>
+    </ul>
+
+    <h2>Default components</h2>
+
+    <ul>
+      <li><a href="#text-sizing-appearance" title="">Text sizing and appearance</a>
+        <ul>
+          <li><a href="#headings" title="Headings">Headings</a></li>
+          <li><a href="#text" title="Text">Text</a></li>
+          <li><a href="#lists" title="Lists">Lists</a></li>
+          <li><a href="#links" title="Links">Links</a></li>
+        </ul>
+      </li>
+      <li><a href="#web-forms" title="Web forms">Web forms</a></li>
+      <li><a href="#web-form-validation-errors" title="Web form validation and errors">Web form validation and
+          errors</a></li>
+      <li><a href="#alerts" title="Alerts">Alerts</a></li>
+      <li><a href="#buttons" title="Buttons">Buttons</a></li>
+      <li><a href="#tables" title="Tables">Tables</a></li>
+    </ul>
+
+    <h2 id="text-sizing-appearance">Text sizing and appearance</h2>
+    <p>Use an override to set the global default font-size of 16px, with a line-height of 1.428.</p>
+
+    <h3 id="headings">Headings</h3>
+    <p>Use a heading to title a section of content that immediately follows it. Headings are large, concise text that
+      are hierarchical in nature.</p>
+
+    <h1>Size H1</h1>
+    <h2>Size H2</h2>
+    <h3>Size H3</h3>
+    <h4>Size H4</h4>
+    <h5>Size H5</h5>
+    <h6>Size H6</h6>
+
+    <h5>Code</h5>
+    <pre class="prettyprint prettyprinted"><code>&lt;h1&gt;Size H1&lt;/h1&gt;
+&lt;h2&gt;Size H2&lt;/h2&gt;
+&lt;h3&gt;Size H3&lt;/h3&gt;
+&lt;h4&gt;Size H4&lt;/h4&gt;
+&lt;h5&gt;Size H5&lt;/h5&gt;
+&lt;h6&gt;Size H6&lt;/h6&gt;
+</code></pre>
+
+    <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
+
+    <h3 id="text">Text</h3>
+
+    <p>Default text size</p>
+    <p><small>Size small text. Try to avoid using.</small></p>
+
+    <h5>Code</h5>
+    <pre class="prettyprint prettyprinted"><code>&lt;p&gt;Default text size&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Size small text. Try to avoid using.&lt;/small&gt;&lt;/p&gt;
+</code></pre>
+
+    <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
+
+    <h3 id="lists">Lists</h3>
+    <p>Use a list to display a number of connected items in a consecutive manner. Typically list items appear one below
+      the other.</p>
+
+    <ul>
+      <li>Unordered list</li>
+    </ul>
+
+    <ul>
+      <li>Ordered list</li>
+    </ul>
+
+    <h5>Code</h5>
+    <pre class="prettyprint prettyprinted"><code>&lt;ul&gt;
+	&lt;li&gt;Unordered list item 1&lt;/li&gt;
+	&lt;li&gt;Unordered list item 2&lt;/li&gt;
+	&lt;li&gt;Unordered list item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  	&lt;li&gt;Ordered list item 1&lt;/li&gt;
+  	&lt;li&gt;Ordered list item 2&lt;/li&gt;
+  	&lt;li&gt;Ordered list item 3&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+    <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
+
+    <h3 id="links">Links</h3>
+
+    <p>Use a link (text and/or image) to take a user to another page, jump to another location within the same page or
+      perform a user-control function determined by client-side scripting (JavaScript).</p>
+
+    <p>By default, links should open in the current browser window. There are some exemptions to this rule. Contact <a
+        href="mailto:eservices@gov.yk.ca" title="Contact eservices@gov.yk.ca">eservices@gov.yk.ca</a> to discuss.</p>
+
+    <p><a href="" title="">Link text</a></p>
+
+    <h5>Code</h5>
+    <pre class="prettyprint prettyprinted"><code>&lt;p>&lt;a href=&quot;&quot; title=&quot;&quot;&gt;Link text&lt;/a>&lt;/p&gt;
+</code></pre>
+
+    <h4>Read our guidance for this component</h4>
+    <p><a href="https://guide.yukon.ca/en/content/creating-content/guidelines-yukonca/links" title="Links">Links</a></p>
+
+    <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
+
+    <hr>
+
+    <h2 id="web-forms">Web forms</h2>
+    <p>Use a web form to collect and transmit information from users in a pre-defined format.</p>
+
+    <div class="form-item form-group">
+      <label for="form-field" class="control-label">Form field label</label>
+      <input class="form-text form-control" type="text" id="form-field" name="form field" value="" aria-required="true">
+    </div>
+    <div class="form-item form-group">
+      <label for="form-field-2" class="control-label">Form field label with help text</label>
+      <input class="form-text form-control" type="text" id="form-field-2" name="form field 2" value=""
+        aria-required="true">
+      <div class="description form-group">For example, 000-000‐0000. We may need to phone you in order to verify
+        details.</div>
+    </div>
+    <div class="form-item form-group">
+      <label for="form-field-textarea" class="control-label">Form field label</label>
+      <textarea class="form-control" rows="3" id="form-field-textarea"></textarea>
+    </div>
+    <div class="form-item form-group">
+      <div class="panel-body">
+        <p>Checkboxes</p>
+        <div class="checkbox">
+          <label for="defaultCheck1">
+            <input id="defaultCheck1" type="checkbox" value="">
+            Option 1</label>
+        </div>
+        <div class="checkbox">
+          <label for="defaultCheck2">
+            <input id="defaultCheck2" type="checkbox" value="">
+            Option 2</label>
+        </div>
+        <div class="checkbox">
+          <label for="defaultCheck3">
+            <input id="defaultCheck3" type="checkbox" value="">
+            Option 3</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-item form-group">
+      <div class="panel-body">
+        <p>Radio buttons</p>
+        <div class="radio">
+          <label for="radio1">
+            <input id="radio1" type="radio" name="optradio">
+            Option 1</label>
+        </div>
+        <div class="radio">
+          <label for="radio2">
+            <input id="radio2" type="radio" name="optradio">
+            Option 2</label>
+        </div>
+        <div class="radio">
+          <label for="radio3">
+            <input id="radio3" type="radio" name="optradio">
+            Option 3</label>
+        </div>
+      </div>
+    </div>
+
+    <h5>Code</h5>
+    <pre class="prettyprint prettyprinted"><code>&lt;div class=&quot;form-item form-group&quot;&gt;
+	&lt;label for=&quot;form-field&quot; class=&quot;control-label&quot;&gt;Form field label&lt;/label&gt;
+	&lt;input class=&quot;form-text form-control&quot; type=&quot;text&quot; id=&quot;form-field&quot; name=&quot;form field&quot; value=&quot;&quot; aria-required=&quot;true&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-item form-group&quot;&gt;
+	&lt;label for=&quot;form-field-2&quot; class=&quot;control-label&quot;&gt;Form field label with help text&lt;/label&gt;
+	&lt;input class=&quot;form-text form-control&quot; type=&quot;text&quot; id=&quot;form-field-2&quot; name=&quot;form field 2&quot; value=&quot;&quot; aria-required=&quot;true&quot;&gt;
+	&lt;div class=&quot;description form-group&quot;&gt;For example, 000-000‐0000. We may need to phone you in order to verify details.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-item form-group&quot;&gt;
+	&lt;label for=&quot;form-field-textarea&quot; class=&quot;control-label&quot;&gt;Form field label&lt;/label&gt;
+	&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot; id=&quot;form-field-textarea&quot;&gt;&lt;/textarea&gt;
+&lt;/div>
+
+&lt;div class=&quot;form-item form-group&quot;&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+		&lt;p&gt;Checkboxes&lt;/p&gt;
+		&lt;div class=&quot;checkbox&quot;&gt;
+		&lt;label for=&quot;defaultCheck1&quot;&gt;
+		&lt;input id=&quot;defaultCheck1&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;
+		Option 1&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;checkbox&quot;&gt;
+		&lt;label for=&quot;defaultCheck2&quot;&gt;
+		&lt;input id=&quot;defaultCheck2&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;
+		Option 2&lt;/label&gt;
+		&lt;/div>
+		&lt;div class=&quot;checkbox&quot;&gt;
+		&lt;label for=&quot;defaultCheck3&quot;&gt;
+		&lt;input id=&quot;defaultCheck3&quot; type=&quot;checkbox&quot; value=&quot;&quot;&gt;
+		Option 3&lt;/label&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-item form-group&quot;&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+	&lt;p&gt;Radio buttons&lt;/p&gt;
+		&lt;div class=&quot;radio&quot;&gt;
+            &lt;label for=&quot;radio1&quot;&gt;
+            &lt;input id=&quot;radio1&quot; type=&quot;radio&quot; name=&quot;optradio&quot;&gt;
+            Option 1&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;radio&quot;&gt;
+            &lt;label for=&quot;radio2&quot;&gt;
+            &lt;input id=&quot;radio2&quot; type=&quot;radio&quot; name=&quot;optradio&quot;&gt;
+            Option 2&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;radio&quot;&gt;
+            &lt;label for=&quot;radio3&quot;&gt;
+            &lt;input id="&quot;radio3&quot; type=&quot;radio&quot; name=&quot;optradio&quot;&gt;
+            Option 3&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
+
+    <hr>
+
+    <h2 id="web-form-validation-errors">Web form validation and errors</h2>
+    <p>Use to provide generic validation and error messages in web forms. Explain what went wrong and how to fix it.</p>
+
+    <div class="form-group">
+      <label for="exampleInputEmail2" class="required"><span class="field-name">Email address</span> <strong
+          class="required">(required)</strong></label>
+      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+    </div>
+
+    <h5>Code: How to implement</h5>
+    <ol>
+      <li>Add <code>class="wb-frmvld"</code> to a <code>div</code> element surrounding the <code>form</code> element
+        <pre class="prettyprint prettyprinted" style=""><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wb-frmvld"</span><span class="tag">&gt;</span><span class="pln">
+	</span><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"get"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"validation-example"</span><span class="tag">&gt;</span><span class="pln">
+	...
+	</span><span class="tag">&lt;/form&gt;</span></code></pre>
+      </li>
+      <li><strong>Optional:</strong> Wrap each form field name with
+        <code>&lt;span class="field-name"&gt;...&lt;/span&gt;</code>. This specifies the prefix to use for the error
+        message summary.
+        <pre class="prettyprint prettyprinted" style=""><code><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="tag">&gt;</span><span class="pln">
+	</span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"field-name"</span><span class="tag">&gt;</span><span class="pln">First Name</span><span class="tag">&lt;/span&gt;</span><span class="pln"> </span><span class="tag">&lt;strong</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="tag">&gt;</span><span class="pln">(required)</span><span class="tag">&lt;/strong&gt;</span><span class="pln">
+</span><span class="tag">&lt;/label&gt;</span></code></pre>
+      </li>
+      <li>Add <code>required="required"</code> to each mandatory form field
+        <pre class="prettyprint prettyprinted"
+          style=""><code><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">autocomplete</span><span class="pun">=</span><span class="atv">"given-name"</span><span class="pln"> </span><span class="atn">required</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></pre>
+      </li>
+    </ol>
+    </section>
+
+    <h4>Read our guidance for this component</h4>
+    <p><a href="https://guide.yukon.ca/en/content-and-design/online-design-patterns/error-message"
+        title="Error message">Error message</a></p>
+
+    <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
+
+    <hr>
+
+    <h2 id="alerts">Alerts</h2>
+    <p>Use alerts to provide contextual feedback messages for typical user actions. Choose from a handful of available
+      and flexible alert messages.</p>
+
+    <p>You can wrap any text and an optional dismiss button in .alert, or one of the four contextual classes (for
+      example, .alert-success) for basic alert messages.</p>
+
+    <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much
+      sense, so always specify a type with a contextual class. Choose from success, info, warning, or danger.</p>
+
+    <h4>Success alert</h4>
+    <p>Use this alert to call attention to information that needs to stand out from the rest of the page content. With
+      the Success alert, the title appears next to a a checkmark icon; the content background is green.</p>
+
+    <section class="alert alert-success">
+      <p>Text</p>
+    </section>
+
+    <h4>Information alert</h4>
+    <p>Use to highlight targeted information for specific segment groups. With the Info alert, the title appears next to
+      a letter "i" icon; the content background is blue. Use this alert to call attention to feature-worthy information
+      that needs to stand out from the rest of the page content.</p>
+
+    <section class="alert alert-info">
+      <p>Text</p>
+    </section>
+
+    <h4>Warning alert</h4>
+    <p>Use this alert to call attention to information that needs to stand out from the rest of the page content. With
+      the Warning alert, the title appears next to a caution icon; the content background is yellow.</p>
+
+    <section class="alert alert-warning">
+      <p>Text</p>
+    </section>
+
+    <h4>Danger alert</h4>
+    <p>Use this alert to call attention to information that needs to stand out from the rest of the page content. With
+      the Danger alert, the title appears next to an exclamation icon; the content background is red.</p>
+
+    <section class="alert alert-danger">
+      <p>Text</p>
+    </section>
+
+    <h5>Code</h5>
+    <pre class="prettyprint prettyprinted"><code>&lt;section class=&quot;alert alert-success&quot;&gt;
+  &lt;p&gt;Text&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;alert alert-info&quot;&gt;
+  &lt;p&gt;Text&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;alert alert-warning&quot;&gt;
+  &lt;p&gt;Text&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;alert alert-danger&quot;&gt;
+  &lt;p&gt;Text&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+
+    <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
+
+    <hr>
+
+    <h2 id="buttons">Buttons</h2>
+
+    <p>Use buttons to create a call to action that entices the user to submit content from a web form. You can also use
+      buttons to send users to another online service that provides additional information.</p>
+
+    <p>Write button text in sentence case, describing the action it performs. Text usually follows a verb + noun
+      pattern.</p>
+
+    <p>Align buttons to the left edge of your form.</p>
+
+    <div class="form-actions webform-actions form-wrapper">
+      <button class="webform-button form-submit btn-default btn" type="submit" id="" name="" value="Go back a step">Go
+        back a step</button>
+      <button class="webform-button btn-primary form-submit btn" type="submit" id="" name=""
+        value="Continue to next step">Continue to next step</button>
+    </div>
+
+    <h5>Disabled buttons</h5>
+
+    <p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
+
+    <h5>Code</h5>
+    <pre class="prettyprint prettyprinted"><code>&lt;div class=&quot;form-actions webform-actions form-wrapper&quot;&gt;
+	&lt;button class=&quot;webform-button form-submit btn-default btn&quot; type=&quot;submit&quot; id=&quot;&quot; name=&quot;&quot; value=&quot;Go back a step&quot;&gt;Go back a step&lt;/button&gt;
+	&lt;button class=&quot;webform-button btn-primary form-submit btn&quot; type=&quot;submit&quot; id=&quot;&quot; name=&quot;&quot; value=&quot;Continue to next step&quot;&gt;Continue to next step&lt;/button&gt;
+&lt;/div></code></pre>
+
+    <h4>Read our guidance for this component</h4>
+    <p><a href="https://guide.yukon.ca/en/content-and-design/online-design-patterns/button" title="Button">Button</a>
+    </p>
+
+    <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
+
+    <hr>
+
+    <h2 id="tables">Tables</h2>
+
+    <p>Use to organize data into rows and columns in order to create data cells.</p>
+
+    <p>Add the base .table CSS to any table. Given the widespread use of tables for other plugins like calendars and
+      date pickers, here we list some isolated custom table styles.</p>
+
+    <table class="table">
+      <tr>
+        <td>Data Data</td>
+        <td>Data Data</td>
+        <td>Data Data</td>
+      </tr>
+      <tr>
+        <td>Data Data</td>
+        <td>Data Data</td>
+        <td>Data Data</td>
+      </tr>
+      <tr>
+        <td>Data Data</td>
+        <td>Data Data</td>
+        <td>Data Data</td>
+      </tr>
+    </table>
+
+    <h5>Code</h5>
+    <pre class="prettyprint prettyprinted"><code>&lt;table class="table"&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Data Data&lt;/td&gt;
+		&lt;td&gt;Data Data&lt;/td&gt;
+		&lt;td&gt;Data Data&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Data Data&lt;/td&gt;
+		&lt;td&gt;Data Data&lt;/td&gt;
+		&lt;td&gt;Data Data&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Data Data&lt;/td&gt;
+		&lt;td&gt;Data Data&lt;/td&gt;
+		&lt;td&gt;Data Data&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+    <h4>Read our guidance for this component</h4>
+    <p><a href="https://guide.yukon.ca/en/content/creating-content/guidelines-yukonca/when-and-how-use-use-tables"
+        title="Tables">Tables</a></p>
+
+    <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
+
+    <hr class="mt-5 mb-4">
+
     <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
   </div>
 
