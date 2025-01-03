@@ -56,6 +56,9 @@ $link-hover-color: #008392;
 
 $primary: #005a65;
 
+// Custom colours
+$yt-border-accent: #ffcd57;
+
 
 // Required
 @import "bootstrap/scss/variables";
@@ -110,5 +113,9 @@ $primary: #005a65;
 // @import "icon-list";
 
 body {
-  padding: 1.5rem;
+  // padding: 1.5rem;
+}
+
+.yt-header-container {
+  border-bottom: 4px solid $yt-border-accent;
 }
