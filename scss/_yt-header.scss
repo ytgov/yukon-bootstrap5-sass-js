@@ -39,3 +39,8 @@
     
   }
   
+// Bootstrap 5 offcanvas header
+// Adds the yellow Yukon.ca border
+.offcanvas-header {
+  border-bottom: $yt-border-accent 4px solid;
+}

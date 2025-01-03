@@ -24,7 +24,8 @@
             <a href="/fr" class="btn btn-link" hreflang="fr" lang="fr">Français</a>
           </li>
           <li class="list-inline-item">
-            <button type="button" class="btn btn-link">
+            <button type="button" class="btn btn-link" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas-menu">
               <span class="yt-menu-icon me-2" aria-hidden="true">
                 <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                   <g fill="textColor" fill-rule="evenodd">
@@ -54,26 +55,41 @@
       <p class="fs-4">You've successfully loaded up a Bootstrap example! It's loaded up with <a
           href="https://getbootstrap.com/">Bootstrap 5</a> and tooling for compiling our Sass and JavaScript to your
         needs.</p>
-      <p>See the <a href="https://github.com/twbs/examples/tree/main/sass-js">Bootstrap 5 Sass & JS example documentation</a> for more details.</p>
+      <p>See the <a href="https://github.com/twbs/examples/tree/main/sass-js">Bootstrap 5 Sass & JS example
+          documentation</a> for more details.</p>
     </div>
 
     <button type="button" class="btn btn-primary me-3" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasExample">Toggle offcanvas</button>
+      data-bs-target="#offcanvas-menu">Toggle offcanvas menu</button>
     <a id="popoverButton" class="text-primary" href="#" role="button" data-bs-toggle="popover" title="Custom popover"
       data-bs-content="This is a Bootstrap popover.">Example popover</a>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-menu"
+      aria-labelledby="offcanvas-menu-label">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="offcanvas-menu-label">Yukon.ca Design System</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
+
+        <ul class="nav flex-column mb-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+
         <div>
           Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
           etc.
         </div>
         <div class="dropdown mt-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
             data-bs-toggle="dropdown">
             Dropdown button
           </button>
@@ -100,6 +116,7 @@
 
     <hr class="mt-5 mb-4">
 
+    <h2>Examples</h2>
     <p>Examples of the Yukon.ca Design System in action:</p>
 
     <ul>
@@ -569,12 +586,14 @@
 
     <p>Use to organize data into rows and columns in order to create data cells.</p>
 
-    <p>Add the base <code>.table</code> CSS to any table. Given the widespread use of tables for other plugins like calendars and
+    <p>Add the base <code>.table</code> CSS to any table. Given the widespread use of tables for other plugins like
+      calendars and
       date pickers, here we list some isolated custom table styles.</p>
 
     <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
 
-    <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>. In most cases, <code>.table-striped</code> is preferred to <code>.table-hover</code>.</p>
+    <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>. In most
+      cases, <code>.table-striped</code> is preferred to <code>.table-hover</code>.</p>
 
     <table class="table table-striped">
       <thead>
