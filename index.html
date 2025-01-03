@@ -378,33 +378,22 @@
     <p>Use to provide generic validation and error messages in web forms. Explain what went wrong and how to fix it.
     </p>
 
-    <div class="form-group">
-      <label for="exampleInputEmail2" class="required"><span class="field-name">Email address</span> <strong
-          class="required">(required)</strong></label>
-      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-    </div>
+    <form class="mb-3">
+      <div class="mb-3">
+        <label for="form-field-example-v1" class="form-label">Email address (required)</label>
+        <input type="email" placeholder="Enter email" class="form-control" id="form-field-example-v1" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
     <h5>Code: How to implement</h5>
     <ol>
-      <li>Add <code>class="wb-frmvld"</code> to a <code>div</code> element surrounding the <code>form</code> element
-        <pre class="prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wb-frmvld"</span><span class="tag">&gt;</span><span class="pln">
-	</span><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"get"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"validation-example"</span><span class="tag">&gt;</span><span class="pln">
-	...
-	</span><span class="tag">&lt;/form&gt;</span></code></pre>
-      </li>
-      <li><strong>Optional:</strong> Wrap each form field name with
-        <code>&lt;span class="field-name"&gt;...&lt;/span&gt;</code>. This specifies the prefix to use for the error
-        message summary.
-        <pre class="prettyprint prettyprinted"><code><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="tag">&gt;</span><span class="pln">
-	</span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"field-name"</span><span class="tag">&gt;</span><span class="pln">First Name</span><span class="tag">&lt;/span&gt;</span><span class="pln"> </span><span class="tag">&lt;strong</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="tag">&gt;</span><span class="pln">(required)</span><span class="tag">&lt;/strong&gt;</span><span class="pln">
-</span><span class="tag">&lt;/label&gt;</span></code></pre>
-      </li>
-      <li>Add <code>required="required"</code> to each mandatory form field
-        <pre
-          class="prettyprint prettyprinted"><code><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">autocomplete</span><span class="pun">=</span><span class="atv">"given-name"</span><span class="pln"> </span><span class="atn">required</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></pre>
-      </li>
+      <li>Indicate to the user in the label that the form field is required.</li>
+      <li>Add the <code>required</code> attribute to the form element.</li>
+      <li>This uses <a href="https://getbootstrap.com/docs/5.3/forms/validation/#browser-defaults">built-in browser
+          validation</a>; you can add additional validation and alert messages using server-side
+        code.</li>
     </ol>
-    </section>
 
     <h4>Read our guidance for this component</h4>
     <p><a href="https://guide.yukon.ca/en/content-and-design/online-design-patterns/error-message"
@@ -415,6 +404,24 @@
     <hr>
 
     <h2 id="alerts">Alerts</h2>
+
+    <!-- Inline SVG icons via https://getbootstrap.com/docs/5.3/components/alerts/#icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check-circle-fill" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+      </symbol>
+      <symbol id="info-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </symbol>
+      <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+        <path
+          d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+      </symbol>
+    </svg>
+
+
     <p>Use alerts to provide contextual feedback messages for typical user actions. Choose from a handful of available
       and flexible alert messages.</p>
 
@@ -428,9 +435,15 @@
     <p>Use this alert to call attention to information that needs to stand out from the rest of the page content. With
       the Success alert, the title appears next to a a checkmark icon; the content background is green.</p>
 
-    <section class="alert alert-success">
-      <p>Text</p>
-    </section>
+    <div class="alert alert-success d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:">
+        <use xlink:href="#check-circle-fill" />
+      </svg>
+      <div>
+        An example success alert with an icon
+      </div>
+    </div>
+
 
     <h4>Information alert</h4>
     <p>Use to highlight targeted information for specific segment groups. With the Info alert, the title appears next
@@ -439,27 +452,58 @@
       information
       that needs to stand out from the rest of the page content.</p>
 
-    <section class="alert alert-info">
-      <p>Text</p>
-    </section>
+    <div class="alert alert-primary d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Info:">
+        <use xlink:href="#info-fill" />
+      </svg>
+      <div>
+        An example alert with an icon
+      </div>
+    </div>
+
 
     <h4>Warning alert</h4>
     <p>Use this alert to call attention to information that needs to stand out from the rest of the page content. With
       the Warning alert, the title appears next to a caution icon; the content background is yellow.</p>
 
-    <section class="alert alert-warning">
-      <p>Text</p>
-    </section>
+    <div class="alert alert-warning d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:">
+        <use xlink:href="#exclamation-triangle-fill" />
+      </svg>
+      <div>
+        An example warning alert with an icon
+      </div>
+    </div>
+
 
     <h4>Danger alert</h4>
     <p>Use this alert to call attention to information that needs to stand out from the rest of the page content. With
-      the Danger alert, the title appears next to an exclamation icon; the content background is red.</p>
+      the Danger alert, the title appears next to a caution icon; the content background is red.</p>
 
-    <section class="alert alert-danger">
-      <p>Text</p>
-    </section>
+    <div class="alert alert-danger d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:">
+        <use xlink:href="#exclamation-triangle-fill" />
+      </svg>
+      <div>
+        An example danger alert with an icon
+      </div>
+    </div>
 
-    <h5>Code</h5>
+    <h4>Dismissable alert</h4>
+    <p>You can use the dismissable feature if you've loaded <a href="https://getbootstrap.com/docs/5.3/components/alerts/#dismissing">Bootstrap 5's alert plugin JavaScript</a>.</p>
+
+    <div class="alert alert-warning d-flex align-items-center alert-dismissible fade show" role="alert">
+      <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:">
+        <use xlink:href="#exclamation-triangle-fill" />
+      </svg>
+      <div>
+        <strong>Warning!</strong> An example warning alert with an icon.
+      </div>
+
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <h5>Code (to update)</h5>
     <pre class="prettyprint prettyprinted"><code>&lt;section class=&quot;alert alert-success&quot;&gt;
   &lt;p&gt;Text&lt;/p&gt;
 &lt;/section&gt;
