@@ -49,6 +49,8 @@ $border-radius: .4rem;
 // Yukon.ca primary font
 $font-family-base: Montserrat, Helvetica, Arial, sans-serif;
 $headings-font-weight: 600;
+$headings-margin-bottom: 1rem;
+$line-height-base: 1.428;
 
 // Link colours
 
@@ -116,6 +118,12 @@ $yt-border-accent: #ffcd57;
 
 body {
   // padding: 1.5rem;
+}
+
+// Sibling selector for h2's that are partway through a longer piece of content
+// to have slightly more margin-top (similar to current Yukon.ca theme)
+p + h2, ul + h2, ol + h2, figure + h2, dl + h2, pre + h2, blockquote + h2 {
+  margin-top: 2rem;
 }
 
 .yt-header-container {
