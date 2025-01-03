@@ -490,7 +490,9 @@
     </div>
 
     <h4>Dismissable alert</h4>
-    <p>You can use the dismissable feature if you've loaded <a href="https://getbootstrap.com/docs/5.3/components/alerts/#dismissing">Bootstrap 5's alert plugin JavaScript</a>.</p>
+    <p>You can use the dismissable feature if you've loaded <a
+        href="https://getbootstrap.com/docs/5.3/components/alerts/#dismissing">Bootstrap 5's alert plugin
+        JavaScript</a>.</p>
 
     <div class="alert alert-warning d-flex align-items-center alert-dismissible fade show" role="alert">
       <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:">
@@ -533,20 +535,23 @@
     <p>Write button text in sentence case, describing the action it performs. Text usually follows a verb + noun
       pattern.</p>
 
+    <p>Buttons to move to forward and backward steps in a form or flow should follow reading order (backward/previous on
+      the left, and forward/next on the right).</p>
+
     <p>Align buttons to the left edge of your form.</p>
 
-    <div class="form-actions webform-actions form-wrapper">
-      <button class="webform-button form-submit btn-default btn" type="submit" id="" name="" value="Go back a step">Go
-        back a step</button>
-      <button class="webform-button btn-primary form-submit btn" type="submit" id="" name=""
-        value="Continue to next step">Continue to next step</button>
+    <div class="mb-3">
+      <button type="button" class="btn btn-outline-primary" type="submit" id="" name="" value="Go back a step">Go back a
+        step</button>
+      <button type="button" class="btn btn-primary" type="submit" id="" name="" value="Continue to next step">Continue
+        to next step</button>
     </div>
 
     <h5>Disabled buttons</h5>
 
     <p>Disabled buttons have poor contrast and can confuse some users, so avoid them if possible.</p>
 
-    <h5>Code</h5>
+    <h5>Code (to update)</h5>
     <pre class="prettyprint prettyprinted"><code>&lt;div class=&quot;form-actions webform-actions form-wrapper&quot;&gt;
 	&lt;button class=&quot;webform-button form-submit btn-default btn&quot; type=&quot;submit&quot; id=&quot;&quot; name=&quot;&quot; value=&quot;Go back a step&quot;&gt;Go back a step&lt;/button&gt;
 	&lt;button class=&quot;webform-button btn-primary form-submit btn&quot; type=&quot;submit&quot; id=&quot;&quot; name=&quot;&quot; value=&quot;Continue to next step&quot;&gt;Continue to next step&lt;/button&gt;
@@ -564,28 +569,41 @@
 
     <p>Use to organize data into rows and columns in order to create data cells.</p>
 
-    <p>Add the base .table CSS to any table. Given the widespread use of tables for other plugins like calendars and
+    <p>Add the base <code>.table</code> CSS to any table. Given the widespread use of tables for other plugins like calendars and
       date pickers, here we list some isolated custom table styles.</p>
 
-    <table class="table">
-      <tr>
-        <td>Data Data</td>
-        <td>Data Data</td>
-        <td>Data Data</td>
-      </tr>
-      <tr>
-        <td>Data Data</td>
-        <td>Data Data</td>
-        <td>Data Data</td>
-      </tr>
-      <tr>
-        <td>Data Data</td>
-        <td>Data Data</td>
-        <td>Data Data</td>
-      </tr>
+    <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
+
+    <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>. In most cases, <code>.table-striped</code> is preferred to <code>.table-hover</code>.</p>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Reference number</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data Data</td>
+          <td>Data Data</td>
+          <td>Data Data</td>
+        </tr>
+        <tr>
+          <td>Data Data</td>
+          <td>Data Data</td>
+          <td>Data Data</td>
+        </tr>
+        <tr>
+          <td>Data Data</td>
+          <td>Data Data</td>
+          <td>Data Data</td>
+        </tr>
+      </tbody>
     </table>
 
-    <h5>Code</h5>
+    <h5>Code (to update)</h5>
     <pre class="prettyprint prettyprinted"><code>&lt;table class="table"&gt;
 	&lt;tr&gt;
 		&lt;td&gt;Data Data&lt;/td&gt;
