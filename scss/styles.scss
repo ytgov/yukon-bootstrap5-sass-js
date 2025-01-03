@@ -134,11 +134,11 @@ body {
   text-decoration: none;
 }
 
-.yt-nav-items .btn-link:hover {
+.yt-nav-items .btn-link:hover, .yt-nav-items .btn-link:focus {
   color: $link-hover-color;
 }
 
-.yt-nav-items .btn-link:hover svg {
+.yt-nav-items .btn-link:hover svg, .yt-nav-items .btn-link:focus svg {
   fill: $link-hover-color;
 }
 
@@ -149,6 +149,7 @@ body {
 
 .yt-menu-icon svg {
   margin-top: -3px;
+  transition: fill .15s ease-in-out;
 }
 
 .yt-menu-icon-text {
