@@ -34,7 +34,7 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 @import "bootstrap/scss/functions";
 
 // Customize some defaults
-$body-color: #000;
+$body-color: #323232;
 $body-bg: #fff;
 $border-radius: .4rem;
 // $success: #7952b3;
@@ -111,6 +111,7 @@ $yt-border-accent: #ffcd57;
 //
 
 // @import "icon-list";
+@import "aurora-town";
 
 body {
   // padding: 1.5rem;
@@ -118,4 +119,11 @@ body {
 
 .yt-header-container {
   border-bottom: 4px solid $yt-border-accent;
+  margin-bottom: 4px;
 }
+
+// TODO - add media breakpoints
+.yt-main-heading {
+  max-width: 40rem;
+}
+
