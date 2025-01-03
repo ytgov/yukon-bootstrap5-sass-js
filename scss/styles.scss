@@ -129,6 +129,12 @@ body {
 }
 
 // TODO - review if this should be set in a variable
+.yt-nav-items li:not(:last-child) {
+  border-right: 1px solid #f1f1f1;
+  padding-right: .75rem;
+}
+
+
 .yt-nav-items .btn-link {
   color: $body-color;
   text-decoration: none;
