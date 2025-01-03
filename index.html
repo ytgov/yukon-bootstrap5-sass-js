@@ -164,12 +164,15 @@
     <p>Larger text example:</p>
     <p>The Yukon’s sparse population <a href="https://www.travelyukon.com/en/discover-yukon/where-yukon">leaves plenty
         of room for big stuff</a>, like the biggest non-polar ice fields in the country. Or the highest mountains in
-      Canada. But that's not all, the territory is a haven for some of North America's most impressive species. <strong>A visit
-      to the Yukon is a vacation like no other.</strong> Why? Because the Yukon is like nowhere else on Earth. Its majestic
+      Canada. But that's not all, the territory is a haven for some of North America's most impressive species.
+      <strong>A visit
+        to the Yukon is a vacation like no other.</strong> Why? Because the Yukon is like nowhere else on Earth. Its
+      majestic
       mountains–you know, the massive ones we just mentioned–untamed wildlife and crystal clear waters of glacier-fed
       lakes beckon travellers and adventurers alike. All of this magic is situated directly north of the Canadian
       province of British Columbia, to the east of Alaska and west of the Northwest Territories. Its northern border
-      touches the Arctic Ocean.</p>
+      touches the Arctic Ocean.
+    </p>
     <p>There are many ways to get to the Yukon, but flying is definitely the easiest. You can catch regular flights with
       Air North, Yukon’s Airline, from Vancouver, Calgary, Edmonton, Toronto, Ottawa, Kelowna, Victoria and Yellowknife.
       Or, if you’re coming from abroad, there are a variety of convenient flights arriving to the Yukon via other major
@@ -221,7 +224,7 @@
       <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
     </dl>
 
-    <h5>Code</h5>
+    <h5>Code (to update)</h5>
     <pre class="prettyprint prettyprinted"><code>&lt;ul&gt;
 	&lt;li&gt;Unordered list item 1&lt;/li&gt;
 	&lt;li&gt;Unordered list item 2&lt;/li&gt;
@@ -262,63 +265,53 @@
     <h2 id="web-forms">Web forms</h2>
     <p>Use a web form to collect and transmit information from users in a pre-defined format.</p>
 
-    <div class="form-item form-group">
-      <label for="form-field" class="control-label">Form field label</label>
-      <input class="form-text form-control" type="text" id="form-field" name="form field" value="" aria-required="true">
-    </div>
-    <div class="form-item form-group">
-      <label for="form-field-2" class="control-label">Form field label with help text</label>
-      <input class="form-text form-control" type="text" id="form-field-2" name="form field 2" value=""
-        aria-required="true">
-      <div class="description form-group">For example, 000-000‐0000. We may need to phone you in order to verify
-        details.</div>
-    </div>
-    <div class="form-item form-group">
-      <label for="form-field-textarea" class="control-label">Form field label</label>
-      <textarea class="form-control" rows="3" id="form-field-textarea"></textarea>
-    </div>
-    <div class="form-item form-group">
-      <div class="panel-body">
-        <p>Checkboxes</p>
-        <div class="checkbox">
-          <label for="defaultCheck1">
-            <input id="defaultCheck1" type="checkbox" value="">
-            Option 1</label>
+    <form class="mb-5">
+      <div class="mb-3">
+        <label for="form-field-example-1" class="form-label">Form field label</label>
+        <input type="text" class="form-control" id="form-field-example-1">
+      </div>
+      <div class="mb-3">
+        <label for="form-field-example-2" class="form-label">Form field label with help text</label>
+        <input type="text" class="form-control" id="form-field-example-2"
+          aria-describedby="form-field-example-2-help-text">
+        <div id="form-field-example-2-help-text" class="form-text">For example, 000-000‐0000. We may need to phone you
+          in order to verify details.</div>
+      </div>
+      <div class="mb-3">
+        <label for="form-field-example-3" class="form-label">Form field label</label>
+        <textarea class="form-control" rows="3" id="form-field-example-3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Checkboxes</label>
+        <div class="form-check">
+          <label class="form-check-label"><input type="checkbox" class="form-check-input">Option 1</label>
         </div>
-        <div class="checkbox">
-          <label for="defaultCheck2">
-            <input id="defaultCheck2" type="checkbox" value="">
-            Option 2</label>
+        <div class="form-check">
+          <label class="form-check-label"><input type="checkbox" class="form-check-input">Option 2</label>
         </div>
-        <div class="checkbox">
-          <label for="defaultCheck3">
-            <input id="defaultCheck3" type="checkbox" value="">
-            Option 3</label>
+        <div class="form-check">
+          <label class="form-check-label"><input type="checkbox" class="form-check-input">Option 3</label>
         </div>
       </div>
-    </div>
-    <div class="form-item form-group">
-      <div class="panel-body">
-        <p>Radio buttons</p>
-        <div class="radio">
-          <label for="radio1">
-            <input id="radio1" type="radio" name="optradio">
-            Option 1</label>
+      <div class="mb-3">
+        <label class="form-label">Radio buttons</label>
+        <div class="form-check">
+          <label class="form-check-label"><input type="radio" class="form-check-input" name="form-field-example-5"
+              value="">Option 1</label>
         </div>
-        <div class="radio">
-          <label for="radio2">
-            <input id="radio2" type="radio" name="optradio">
-            Option 2</label>
+        <div class="form-check">
+          <label class="form-check-label"><input type="radio" class="form-check-input" name="form-field-example-5"
+              value="">Option 2</label>
         </div>
-        <div class="radio">
-          <label for="radio3">
-            <input id="radio3" type="radio" name="optradio">
-            Option 3</label>
+        <div class="form-check">
+          <label class="form-check-label"><input type="radio" class="form-check-input" name="form-field-example-5"
+              value="">Option 3</label>
         </div>
       </div>
-    </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
-    <h5>Code</h5>
+    <h5>Code (to update)</h5>
     <pre class="prettyprint prettyprinted"><code>&lt;div class=&quot;form-item form-group&quot;&gt;
 	&lt;label for=&quot;form-field&quot; class=&quot;control-label&quot;&gt;Form field label&lt;/label&gt;
 	&lt;input class=&quot;form-text form-control&quot; type=&quot;text&quot; id=&quot;form-field&quot; name=&quot;form field&quot; value=&quot;&quot; aria-required=&quot;true&quot;&gt;
@@ -394,7 +387,7 @@
     <h5>Code: How to implement</h5>
     <ol>
       <li>Add <code>class="wb-frmvld"</code> to a <code>div</code> element surrounding the <code>form</code> element
-        <pre class="prettyprint prettyprinted" style=""><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wb-frmvld"</span><span class="tag">&gt;</span><span class="pln">
+        <pre class="prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wb-frmvld"</span><span class="tag">&gt;</span><span class="pln">
 	</span><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"get"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"validation-example"</span><span class="tag">&gt;</span><span class="pln">
 	...
 	</span><span class="tag">&lt;/form&gt;</span></code></pre>
@@ -402,13 +395,13 @@
       <li><strong>Optional:</strong> Wrap each form field name with
         <code>&lt;span class="field-name"&gt;...&lt;/span&gt;</code>. This specifies the prefix to use for the error
         message summary.
-        <pre class="prettyprint prettyprinted" style=""><code><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="tag">&gt;</span><span class="pln">
+        <pre class="prettyprint prettyprinted"><code><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="tag">&gt;</span><span class="pln">
 	</span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"field-name"</span><span class="tag">&gt;</span><span class="pln">First Name</span><span class="tag">&lt;/span&gt;</span><span class="pln"> </span><span class="tag">&lt;strong</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="tag">&gt;</span><span class="pln">(required)</span><span class="tag">&lt;/strong&gt;</span><span class="pln">
 </span><span class="tag">&lt;/label&gt;</span></code></pre>
       </li>
       <li>Add <code>required="required"</code> to each mandatory form field
-        <pre class="prettyprint prettyprinted"
-          style=""><code><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">autocomplete</span><span class="pun">=</span><span class="atv">"given-name"</span><span class="pln"> </span><span class="atn">required</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></pre>
+        <pre
+          class="prettyprint prettyprinted"><code><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"fname1"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">autocomplete</span><span class="pun">=</span><span class="atv">"given-name"</span><span class="pln"> </span><span class="atn">required</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></pre>
       </li>
     </ol>
     </section>

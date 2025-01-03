@@ -62,6 +62,9 @@ $primary: #005a65;
 // Custom colours
 $yt-border-accent: #ffcd57;
 
+// Form elements
+$form-label-font-weight: 600;
+
 // TODO - Review overlap with built-in B5 colours:
 $yt-soft-grey-background: #f5f5f5;
 $yt-soft-grey-border: #ddd;
@@ -81,12 +84,12 @@ $yt-soft-grey-color: #707070;
 // @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-// @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/button-group";
+@import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/nav";
 // @import "bootstrap/scss/navbar"; // Requires nav
 // @import "bootstrap/scss/card";
