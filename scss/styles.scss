@@ -127,3 +127,24 @@ body {
   max-width: 40rem;
 }
 
+// TODO - review if this should be set in a variable
+.yt-nav-items .btn-link {
+  color: $body-color;
+  text-decoration: none;
+
+  // Fix for tiny 1px offset because of the included menu icon
+  vertical-align: top;
+  min-height: 42px;
+}
+
+.yt-nav-items .btn-link:hover {
+  color: $link-hover-color;
+}
+
+.yt-menu-icon svg {
+  margin-top: -2px;
+}
+
+.yt-menu-icon-text {
+  margin-top: -1px;
+}
