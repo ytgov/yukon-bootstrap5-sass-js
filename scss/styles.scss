@@ -62,6 +62,11 @@ $primary: #005a65;
 // Custom colours
 $yt-border-accent: #ffcd57;
 
+// TODO - Review overlap with built-in B5 colours:
+$yt-soft-grey-background: #f5f5f5;
+$yt-soft-grey-border: #ddd;
+$yt-soft-grey-color: #707070;
+
 
 // Required
 @import "bootstrap/scss/variables";
@@ -115,6 +120,7 @@ $yt-border-accent: #ffcd57;
 
 // @import "icon-list";
 @import "aurora-town";
+@import "yt-header";
 
 body {
   // padding: 1.5rem;
@@ -126,46 +132,18 @@ p + h2, ul + h2, ol + h2, figure + h2, dl + h2, pre + h2, blockquote + h2 {
   margin-top: 2rem;
 }
 
-.yt-header-container {
-  border-bottom: 4px solid $yt-border-accent;
-  margin-bottom: 4px;
-}
+
 
 // TODO - add media breakpoints
 .yt-main-heading {
   max-width: 40rem;
 }
 
-// TODO - review if this should be set in a variable
-.yt-nav-items li:not(:last-child) {
-  border-right: 1px solid #f1f1f1;
-  padding-right: .75rem;
-}
-
-
-.yt-nav-items .btn-link {
-  color: $body-color;
-  text-decoration: none;
-}
-
-.yt-nav-items .btn-link:hover, .yt-nav-items .btn-link:focus {
-  color: $link-hover-color;
-}
-
-.yt-nav-items .btn-link:hover svg, .yt-nav-items .btn-link:focus svg {
-  fill: $link-hover-color;
-}
-
-.yt-menu-icon {
-  display: inline-block;
-  max-height: 16px;
-}
-
-.yt-menu-icon svg {
-  margin-top: -3px;
-  transition: fill .15s ease-in-out;
-}
-
-.yt-menu-icon-text {
-  
+// Pretty-printing code blocks
+pre.prettyprint {
+  background-color: $yt-soft-grey-background;
+  border: 1px solid $yt-soft-grey-border;
+  color: $yt-soft-grey-color;
+  // font-size: 95%;
+  padding: 1rem;
 }
