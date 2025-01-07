@@ -163,3 +163,61 @@ svg.bi {
   vertical-align: -.125em;
   fill: currentcolor;
 }
+
+// Footer styles
+footer[role="contentinfo"] {
+  background-color: #0d3e4f;
+}
+
+.brand {
+  position: relative;
+  overflow: hidden;
+}
+
+.brand:after{
+  content:"";
+  position:absolute;
+  right:-40%;
+  top:0;
+  background-image:url(/images/Aurora-small-mobile.svg);
+  background-size:100%;
+  background-repeat:no-repeat;
+  height:200px;
+  width:90%
+}
+@media (min-width:767px){
+  .brand:after{
+    background-image:url(/images/Aurora-main.svg);
+    top:-30px;
+    width:70%;
+    right:-20%
+  }
+}
+
+.brand .brand-items {
+  padding: 36px 0;
+}
+
+.mrgn-lft-lg {
+  margin-left: 30px;
+}
+
+.site-main-logo object {
+  max-width: 100%;
+}
+
+.footer-menu-wrapper {
+  background-color: #0b3442;
+  color: #fff;
+}
+
+footer[role="contentinfo"] .site-desc-wrap .site-desc {
+  color: #fff;
+  vertical-align: bottom;
+  // font-size: 14px;
+  line-height: 50px;
+}
+
+footer section {
+  margin-top: 5px;
+}
