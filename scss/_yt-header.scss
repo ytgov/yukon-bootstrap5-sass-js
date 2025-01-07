@@ -1,44 +1,57 @@
 // Yukon.ca main header (with Yukon logo and menu)
 
 .yt-header-container {
-    border-bottom: 4px solid $yt-border-accent;
-    margin-bottom: 4px;
-  }
+  border-bottom: 4px solid $yt-border-accent;
+  margin-bottom: 4px;
+}
+
+.yt-header-logo {
+  display: inline-block;
+}
+
+.yt-header-logo object {
+  width: 100%;
+}
 
 // TODO - review if this should be set in a variable
-.yt-nav-items li:not(:last-child) {
+@media (min-width: 768px) {
+  .yt-nav-items li:not(:last-child) {
     border-right: 1px solid #f1f1f1;
     padding-right: .75rem;
   }
-  
-  
-  .yt-nav-items .btn-link {
-    color: $body-color;
-    text-decoration: none;
-  }
-  
-  .yt-nav-items .btn-link:hover, .yt-nav-items .btn-link:focus {
-    color: $link-hover-color;
-  }
-  
-  .yt-nav-items .btn-link:hover svg, .yt-nav-items .btn-link:focus svg {
-    fill: $link-hover-color;
-  }
-  
-  .yt-menu-icon {
-    display: inline-block;
-    max-height: 16px;
-  }
-  
-  .yt-menu-icon svg {
-    margin-top: -3px;
-    transition: fill .15s ease-in-out;
-  }
-  
+}
+
+.yt-nav-items .btn-link {
+  color: $body-color;
+  text-decoration: none;
+}
+
+.yt-nav-items .btn-link:hover,
+.yt-nav-items .btn-link:focus {
+  color: $link-hover-color;
+}
+
+.yt-nav-items .btn-link:hover svg,
+.yt-nav-items .btn-link:focus svg {
+  fill: $link-hover-color;
+}
+
+.yt-menu-icon {
+  display: inline-block;
+  max-height: 16px;
+}
+
+.yt-menu-icon svg {
+  margin-top: -3px;
+  transition: fill .15s ease-in-out;
+}
+
+@media (max-width: 767px) {
   .yt-menu-icon-text {
-    
+    display: none;
   }
-  
+}
+
 // Bootstrap 5 offcanvas header
 // Adds the yellow Yukon.ca border
 .offcanvas-header {

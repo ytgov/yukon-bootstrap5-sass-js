@@ -12,20 +12,22 @@
 
   <div class="container-fluid yt-header-container">
 
-    <div class="container py-4 mx-auto">
+    <div class="container gx-0 gx-md-4 py-4 mx-auto">
       <header class="d-flex justify-content-between align-items-md-center">
+        <div class="col-4 col-md-5 ms-1 ms-sm-0">
         <a href="/" class="yt-header-logo"><object id="yt-header-logo" data="images/logo.svg" role="img"
             type="image/svg+xml" alt="Government of Yukon Logo" tabindex="-1">
             <img alt="Government of Yukon Logo" src="images/logo.png">
           </object></a>
+        </div>
 
-        <ul class="list-inline mb-0 yt-nav-items">
+        <ul class="list-inline yt-nav-items mb-0 mt-2 mt-md-0">
           <li class="list-inline-item">
             <a href="/fr" class="btn btn-link" hreflang="fr" lang="fr">Français</a>
           </li>
           <li class="list-inline-item">
             <button type="button" class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu">
-              <span class="yt-menu-icon me-2" aria-hidden="true">
+              <span class="yt-menu-icon me-sm-2" aria-hidden="true">
                 <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                   <g fill="textColor" fill-rule="evenodd">
                     <rect width="30" height="6" rx="1.5"></rect>
@@ -47,7 +49,7 @@
     <span class="aurora--main"></span>
   </div>
 
-  <div class="container py-4 px-3 mt-3 mx-auto">
+  <div class="container py-0 py-md-4 px-3 mt-3 mx-auto">
 
     <h1 class="yt-main-heading">Template for Bootstrap 5 | Yukon.ca Design System</h1>
     <div class="col-lg-8 px-0">
@@ -645,42 +647,84 @@
 
     <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
   </div>
-  <footer id="yt-footer" role="contentinfo">
-
-    <div class="brand">
-      <div class="container">
-        <div class="row">
-          <div class="brand-items col-12">
-            <div class="site-main-logo mrgn-lft-lg">
-              <object id="footer-logo" data="images/logo-white.svg" role="img" type="image/svg+xml"
-                alt="Government of Yukon Logo" tabindex="-1">
-                <img alt="Government of Yukon Logo" src="images/logo-white.png">
-              </object>
-            </div>
-          </div>
-        </div>
+  <footer id="footer" class="footer bg-eden max-w-none text-white">
+    <div class="footer-left overflow-hidden py-0 px-1">
+      <div class="container-lg footer-logos">
+        <a href="/">
+          <img src="https://yukon.ca/themes/custom/yukonca_glider/logo-white.svg" alt="Yukon Logo">
+        </a>
       </div>
     </div>
+    <div class="footer-right bg-tiber pb-2">
+      <div class="container-lg d-md-flex align-items-md-start justify-content-md-between">
+        <div class="footer__menus text-base d-md-flex w-auto pt-4">
+          <div class="region region-footer-menu">
+            <nav role="navigation" aria-labelledby="block-footermenu-menu" id="block-footermenu"
+              class="block block-menu navigation menu--menu-wet-footer">
 
-    <div class="footer-menu-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="d-flex flex-row col-6">
-            <ul class="footer-menu navbar-left nav">
-              <section id="block-menu-menu-wet-footer" class="block block-menu clearfix">
-                <ul class="nav navbar-nav">
-                  <li><a href="https://yukon.ca" title="Go to Yukon.ca">Home</a></li>
-                </ul>
-              </section>
-            </ul>
+              <h2 class="block-title visually-hidden" id="block-footermenu-menu">Footer menu</h2>
+
+
+
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="/en" data-drupal-link-system-path="<front>">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/en/documents" data-drupal-link-system-path="documents">Documents</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/en/arts-and-culture/events" data-drupal-link-system-path="node/7534">Events</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/forms">Forms</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/en/news" data-drupal-link-system-path="node/372">News</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/en/your-government/legislation/find-government-legislation"
+                    data-drupal-link-system-path="node/7754">Legislation</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/en/places" data-drupal-link-system-path="node/15785">Places</a>
+                </li>
+              </ul>
+
+
+
+            </nav>
+            <nav role="navigation" aria-labelledby="block-secondaryfootermenu-menu" id="block-secondaryfootermenu"
+              class="block block-menu navigation menu--menu-secondary-footer-menu">
+
+              <h2 class="block-title visually-hidden" id="block-secondaryfootermenu-menu">Secondary Footer Menu</h2>
+
+
+
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="/en/your-government/contact-and-follow-government/contact-government"
+                    data-drupal-link-system-path="node/1028">Contact us</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/en/copyright" data-drupal-link-system-path="node/654">Copyright</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/en/disclaimer" data-drupal-link-system-path="node/664">Disclaimer</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/en/privacy-statement" data-drupal-link-system-path="node/662">Privacy statement</a>
+                </li>
+              </ul>
+
+
+
+            </nav>
+
           </div>
-          <div class="d-flex flex-row-reverse col-6">
-            <div class="site-desc-wrap navbar-right">
-              <p class="site-desc">
-                © Copyright 2024 Government of Yukon
-              </p>
-            </div>
-          </div>
+        </div>
+        <div class="footer__legal font-light w-auto text-small flex pt-2 pt-md-4 pb-2 ms-1">
+          ©&nbsp;2025&nbsp;<a href="https://yukon.ca">Government of Yukon</a>
         </div>
       </div>
     </div>

@@ -165,16 +165,15 @@ svg.bi {
 }
 
 // Footer styles
-footer[role="contentinfo"] {
-  background-color: #0d3e4f;
+.bg-eden {
+  background-color: #0d3e4f; // #0d3e4f;
 }
 
-.brand {
+.footer-left {
   position: relative;
-  overflow: hidden;
 }
 
-.brand:after{
+.footer-left:after{
   content:"";
   position:absolute;
   right:-40%;
@@ -186,7 +185,7 @@ footer[role="contentinfo"] {
   width:90%
 }
 @media (min-width:767px){
-  .brand:after{
+  .footer-left:after{
     background-image:url(/images/Aurora-main.svg);
     top:-30px;
     width:70%;
@@ -194,8 +193,15 @@ footer[role="contentinfo"] {
   }
 }
 
-.brand .brand-items {
-  padding: 36px 0;
+
+
+.footer-logos {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.footer-logos a {
+  display: inline-block;
 }
 
 .mrgn-lft-lg {
@@ -206,18 +212,70 @@ footer[role="contentinfo"] {
   max-width: 100%;
 }
 
-.footer-menu-wrapper {
+.bg-tiber {
   background-color: #0b3442;
   color: #fff;
 }
 
-footer[role="contentinfo"] .site-desc-wrap .site-desc {
-  color: #fff;
-  vertical-align: bottom;
-  // font-size: 14px;
-  line-height: 50px;
+// TODO - confirm media queries
+@media (min-width: 768px) {
+  .footer-right .footer__menus .region-footer-menu {
+    display: flex;
+    padding-bottom: 1rem;
+  }
 }
 
-footer section {
-  margin-top: 5px;
+.footer-right .footer__menus .region-footer-menu nav:first-child {
+  padding-right: 3rem;
 }
+
+.footer-right .footer__menus .region-footer-menu ul {
+  margin-bottom: 0;
+  line-height: 23px;
+}
+
+.footer-right ul.menu {
+  margin-left: 1em;
+  padding: 0;
+  list-style: none outside;
+  text-align: left;
+}
+
+.footer-right .footer__menus .region-footer-menu ul.menu li {
+  padding-top: 0;
+}
+
+.footer-right ul.menu .menu-item {
+  margin: 0;
+}
+
+.footer-right .footer__menus .region-footer-menu ul.menu li a {
+  font-weight: 600;
+  line-height: 23px;
+  color: #fff;
+}
+
+.footer__legal {
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .footer__legal {
+    font-size: 14px;
+  }
+}
+
+.footer__legal a {
+  color: #fff;
+}
+
+// footer[role="contentinfo"] .site-desc-wrap .site-desc {
+//   color: #fff;
+//   vertical-align: bottom;
+//   // font-size: 14px;
+//   line-height: 50px;
+// }
+
+// footer section {
+//   margin-top: 5px;
+// }
