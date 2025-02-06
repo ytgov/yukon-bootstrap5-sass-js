@@ -1,9 +1,9 @@
 {
-  "name": "sass-js",
-  "description": "Include Bootstrap's source Sass and compiled JavaScript bundle via npm.",
-  "version": "0.0.0",
+  "name": "yukon.ca-bootstrap5-sass-js",
+  "description": "A work in progress Bootstrap 5 example of the Yukon.ca theme.",
+  "version": "0.0.1",
   "private": true,
-  "repository": "twbs/examples",
+  "repository": "sboots/yukon.ca-bootstrap5-sass-js",
   "license": "MIT",
   "stackblitz": {
     "startCommand": "npm start"
