@@ -1,9 +1,9 @@
 {
-  "name": "yukon.ca-bootstrap5-sass-js",
+  "name": "yukon-bootstrap5-sass-js",
   "description": "A work in progress Bootstrap 5 example of the Yukon.ca theme.",
   "version": "0.0.1",
   "private": true,
-  "repository": "sboots/yukon.ca-bootstrap5-sass-js",
+  "repository": "ytgov/yukon-bootstrap5-sass-js",
   "license": "MIT",
   "stackblitz": {
     "startCommand": "npm start"

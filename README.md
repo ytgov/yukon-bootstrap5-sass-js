@@ -8,8 +8,8 @@ Include [Bootstrap](https://getbootstrap.com)'s source Sass and compiled JavaScr
 ## How to use
 
 ```sh
-git clone https://github.com/sboots/yukon.ca-bootstrap5-sass-js.git
-cd yukon.ca-bootstrap5-sass-js/
+git clone https://github.com/ytgov/yukon-bootstrap5-sass-js
+cd yukon-bootstrap5-sass-js/
 npm install
 npm start
 ```
