@@ -43,7 +43,7 @@ body .aurora--main:before {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  background-image: url(/images/Aurora-small-mobile.svg);
+  background-image: url(../images/Aurora-small-mobile.svg);
   background-repeat: no-repeat;
 }
 
@@ -57,7 +57,7 @@ body .aurora--main:before {
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    background-image: url(/images/Aurora-main.svg);
+    background-image: url(../images/Aurora-main.svg);
     background-size: contain;
   }
 }
@@ -76,6 +76,6 @@ body .aurora--mini:before {
   height: 45px;
   margin: 0 auto;
   content: "";
-  background-image: url(/images/Aurora-mini.svg);
+  background-image: url(../images/Aurora-mini.svg);
   background-repeat: no-repeat;
 }

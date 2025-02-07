@@ -178,7 +178,7 @@ svg.bi {
   position:absolute;
   right:-40%;
   top:0;
-  background-image:url(/images/Aurora-small-mobile.svg);
+  background-image:url(../images/Aurora-small-mobile.svg);
   background-size:100%;
   background-repeat:no-repeat;
   height:200px;
@@ -186,7 +186,7 @@ svg.bi {
 }
 @media (min-width:767px){
   .footer-left:after{
-    background-image:url(/images/Aurora-main.svg);
+    background-image:url(../images/Aurora-main.svg);
     top:-30px;
     width:70%;
     right:-20%
