@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico" />
+  <title>Modèle pour Bootstrap 5 | Système de conception pour Yukon.ca</title>
+</head>
+
+<body>
+
+  <div class="container-fluid yt-header-container">
+
+    <div class="container gx-0 gx-md-4 py-4 mx-auto">
+      <header class="d-flex justify-content-between align-items-md-center">
+        <div class="col-4 col-md-5 ms-1 ms-sm-0 mb-1">
+          <a href="/" class="yt-header-logo"><img src="images/logo.svg" alt="Accueil"></a>
+        </div>
+
+        <ul class="list-inline yt-nav-items mb-0 mt-2 mt-md-0">
+          <li class="list-inline-item">
+            <a href="/" class="btn btn-link" hreflang="en" lang="en">English</a>
+          </li>
+          <li class="list-inline-item">
+            <button type="button" class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu">
+              <span class="yt-menu-icon me-sm-2" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="textColor" fill-rule="evenodd">
+                    <rect width="30" height="6" rx="1.5"></rect>
+                    <rect y="12" width="30" height="6" rx="1.5"></rect>
+                    <rect y="24" width="30" height="6" rx="1.5"></rect>
+                  </g>
+                </svg>
+              </span>
+              <span class="yt-menu-icon-text">Menu</span>
+            </button>
+          </li>
+        </ul>
+      </header>
+    </div>
+
+  </div>
+
+  <div class="aurora-town">
+    <span class="aurora--main"></span>
+  </div>
+
+  <div class="container py-0 py-md-4 px-3 mt-3 mx-auto">
+
+    <h1 class="yt-main-heading">Modèle pour Bootstrap 5 | Système de conception pour Yukon.ca</h1>
+    <div class="col-lg-8 px-0">
+      <p class="fs-4">Donnez à votre service l’apparence de <a href="https://yukon.ca/">Yukon.ca</a>.</p>
+      <p>Commencez avec ce modèle pour inclure nos styles de base dans le code de votre application. Ajoutez ou
+        supprimez des composants selon vos besoins.</p>
+      <p>Les styles CSS utilisés dans le système de conception, notamment les couleurs et les tailles, ne doivent pas
+        être modifiés.</p>
+      <p>Consultez le <a href="https://guide.yukon.ca/">Guide de prestation de services numériques</a> y compris la
+        section <a href="https://guide.yukon.ca/en/content-and-design/online-design-patterns">Modèles de conception en
+          ligne</a>, pour plus de détails sur l'utilisation de ces composants.</p>
+      <p>Cette version du système de conception Yukon.ca est basée sur <a href="https://getbootstrap.com/">Bootstrap
+          5</a>. Consultez <a href="https://github.com/twbs/examples/tree/main/sass-js">la documentation des exemples
+          Sass et JS de Bootstrap 5</a> pour plus de détails.</p>
+    </div>
+
+    <!-- Offcanvas menu section -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-menu" aria-labelledby="offcanvas-menu-label">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvas-menu-label">Système de conception pour Yukon.ca</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+      </div>
+      <div class="offcanvas-body">
+
+        <ul class="nav flex-column mb-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+
+        <div>
+          Du texte comme espace réservé. Dans les applications réelles, vous pouvez utiliser les éléments de votre
+          choix : texte, images, listes, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <hr class="col-1 my-5 mx-0"> -->
+    <!-- Example content would go here in the main body section -->
+
+  </div>
+  <footer id="footer" class="footer bg-eden max-w-none text-white">
+    <div class="footer-left overflow-hidden py-0 px-1">
+      <div class="container-lg footer-logos">
+        <a href="/">
+          <img src="images/logo-white.svg" alt="Logo du Yukon">
+        </a>
+      </div>
+    </div>
+    <div class="footer-right bg-tiber pb-2">
+      <div class="container-lg d-md-flex align-items-md-start justify-content-md-between">
+        <div class="footer__menus text-base d-md-flex w-auto pt-4">
+          <div class="region region-footer-menu">
+            <nav role="navigation" aria-labelledby="block-footermenu-menu" id="block-footermenu"
+              class="block block-menu navigation menu--menu-wet-footer">
+
+              <h2 class="block-title visually-hidden" id="block-footermenu-menu">Menu de bas de page</h2>
+
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr">Accueil</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr/documents">Documents</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr/arts-et-culture/activites">Activités</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr/formulaires">Formulaires</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr/communiques-de-presse">Communiqués</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr/textes-legislatifs">Legislation</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr/etablissements-installations-et-bureaux">Places</a>
+                </li>
+              </ul>
+
+
+
+            </nav>
+            <nav role="navigation" aria-labelledby="block-secondaryfootermenu-menu" id="block-secondaryfootermenu"
+              class="block block-menu navigation menu--menu-secondary-footer-menu">
+
+              <h2 class="block-title visually-hidden" id="block-secondaryfootermenu-menu">Menu de bas de page secondaire
+              </h2>
+
+
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr/avertissement">Avertissement</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr/avis-de-confidentialite">Avis de confidentialité</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://yukon.ca/fr/droit-dauteur">Droit d'auteur</a>
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="https://yukon.ca/fr/votre-gouvernement/joindre-ou-suivre-le-gouvernement/contacter-le-gouvernement">Renseignements</a>
+                </li>
+              </ul>
+
+
+
+            </nav>
+
+          </div>
+        </div>
+        <div class="footer__legal font-light w-auto flex pt-2 pt-md-4 pb-2 ms-1">
+          ©&nbsp;2025&nbsp;<a href="https://yukon.ca/fr">Gouvernement du Yukon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
