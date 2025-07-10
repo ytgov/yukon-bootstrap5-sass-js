@@ -135,7 +135,13 @@ body {
 
 // Sibling selector for h2's that are partway through a longer piece of content
 // to have slightly more margin-top (similar to current Yukon.ca theme)
-p + h2, ul + h2, ol + h2, figure + h2, dl + h2, pre + h2, blockquote + h2 {
+p+h2,
+ul+h2,
+ol+h2,
+figure+h2,
+dl+h2,
+pre+h2,
+blockquote+h2 {
   margin-top: 2rem;
 }
 
@@ -164,6 +170,26 @@ svg.bi {
   fill: currentcolor;
 }
 
+// Acknowledgement statement (immediately above footer)
+#acknowledgment-statement {
+  border-width: 0;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-bottom-width: 4px;
+  border-top-width: 4px;
+  border-style: solid;
+  // $yt-border-accent
+  border-bottom-color: rgb(255 205 87);
+  border-top-color: rgb(255 205 87);
+  background-color: rgb(241 241 241);
+}
+
+#acknowledgment-statement .statement {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
 // Footer styles
 .bg-eden {
   background-color: #0d3e4f; // #0d3e4f;
@@ -173,23 +199,24 @@ svg.bi {
   position: relative;
 }
 
-.footer-left:after{
-  content:"";
-  position:absolute;
-  right:-40%;
-  top:0;
-  background-image:url(../images/Aurora-small-mobile.svg);
-  background-size:100%;
-  background-repeat:no-repeat;
-  height:200px;
-  width:90%
+.footer-left:after {
+  content: "";
+  position: absolute;
+  right: -40%;
+  top: 0;
+  background-image: url(../images/Aurora-small-mobile.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 90%
 }
-@media (min-width:767px){
-  .footer-left:after{
-    background-image:url(../images/Aurora-main.svg);
-    top:-30px;
-    width:70%;
-    right:-20%
+
+@media (min-width:767px) {
+  .footer-left:after {
+    background-image: url(../images/Aurora-main.svg);
+    top: -30px;
+    width: 70%;
+    right: -20%
   }
 }
 
