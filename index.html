@@ -61,6 +61,9 @@
       <p>This version of the Yukon.ca Design System is based on <a href="https://getbootstrap.com/">Bootstrap 5</a>. See
         the <a href="https://github.com/twbs/examples/tree/main/sass-js">Bootstrap 5 Sass & JS example
           documentation</a> for more details.</p>
+      <p>This code is licensed under the <a
+          href="https://github.com/ytgov/yukon-bootstrap5-sass-js/blob/main/LICENSE">MIT License</a>. <a
+          href="https://github.com/ytgov/yukon-bootstrap5-sass-js">View this site on GitHub</a>.</p>
     </div>
 
     <!-- Offcanvas menu section -->
@@ -672,9 +675,38 @@
 
     <p><a href="#top" title="Back to top">&#8593; Back to top</a></p>
 
-    <hr class="mt-5 mb-4">
 
-    <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
+
+    <h2 id="tables">Feedback links</h2>
+
+    <p>All online services, forms, and websites should have a mechanism to provide feedback.</p>
+
+    <p>Some software platforms, including Drupal, have built-in feedback components. For software that does not have a
+      built-in feedback option, you can use the feedback-as-a-service link approach below.</p>
+
+    <p>The service name should be URL-encoded in order to display properly when the destination form has loaded.</p>
+
+    <p>This feedback link typically appears in the website footer or at the bottom of the main content section.</p>
+
+    <p>
+      <a target="_blank"
+        href="https://forms2.service.yukon.ca/content/yukon-forms/ca/en/hpw/service-feedback.html?onlineservice=Example%20service%20name">
+        Submit website feedback
+      </a>
+    </p>
+
+    <pre class="prettyprint prettyprinted"><code>&lt;a target=&quot;_blank&quot; 
+  href=&quot;https://forms2.service.yukon.ca/content/yukon-forms/ca/en/hpw/service-feedback.html?onlineservice=Example%20service%20name&quot;&gt;
+  Submit website feedback
+&lt;/a&gt;</code></pre>
+
+
+    <h4>Read our guidance for this component</h4>
+    <ul>
+      <li><a href="https://guide.yukon.ca/en/content-and-design/online-design-patterns/feedback-form"
+          title="Feedback form">Feedback form</a></li>
+    </ul>
+
   </div>
   <div id="acknowledgment-statement">
     <div class="statement container">The Government of Yukon acknowledges that Indigenous Peoples have traditional
@@ -753,8 +785,14 @@
 
           </div>
         </div>
-        <div class="footer__legal font-light w-auto flex pt-2 pt-md-4 pb-2 ms-1">
+        <div class="footer__legal font-light w-auto flex pt-2 pt-md-4 pb-2 ms-1 text-end">
           ©&nbsp;2025&nbsp;<a href="https://yukon.ca">Government of Yukon</a>
+
+          <div class="mt-1" style="font-weight: normal;">
+            <a id="footer-feedback-link" target="_blank"
+              href="https://forms2.service.yukon.ca/content/yukon-forms/ca/en/hpw/service-feedback.html?onlineservice=Yukon.ca%20Bootstrap%205%20template">Submit
+              website feedback</a>
+          </div>
         </div>
       </div>
     </div>
