@@ -688,14 +688,24 @@
 
     <p>This feedback link typically appears in the website footer or at the bottom of the main content section.</p>
 
+    <p>If you have a specific JavaScript function enabled, you can use the <code>yg-submit-feedback-link</code> class to
+      automatically populate the query string parameters used by the destination form. You should include the base URL
+      for the feedback-as-a-service form, in either English or French, and you can optionally pre-specify the online
+      service name using the <code>onlineService</code> parameter.
+    </p>
+
+    <p>If you are using the JavaScript function, then the <code>onlineService</code> parameter will be added using the
+      current page title if it is not already set. The JavaScript function will also set the <code>url_referrer</code>
+      parameter to the current page URL.</p>
+
     <p>
-      <a target="_blank"
+      <a target="_blank" class="yg-submit-feedback-link"
         href="https://forms2.service.yukon.ca/content/yukon-forms/ca/en/hpw/submit-feedback-about-your-digital-service-experience.html?onlineService=Example%20service%20name">
         Submit website feedback
       </a>
     </p>
 
-    <pre class="prettyprint prettyprinted"><code>&lt;a target=&quot;_blank&quot; 
+    <pre class="prettyprint prettyprinted"><code>&lt;a target=&quot;_blank&quot; class=&quot;yg-submit-feedback-link&quot; 
   href=&quot;https://forms2.service.yukon.ca/content/yukon-forms/ca/en/hpw/submit-feedback-about-your-digital-service-experience.html?onlineService=Example%20service%20name&quot;&gt;
   Submit website feedback
 &lt;/a&gt;</code></pre>
@@ -789,7 +799,7 @@
           ©&nbsp;2025&nbsp;<a href="https://yukon.ca">Government of Yukon</a>
 
           <div class="mt-1" style="font-weight: normal;">
-            <a id="footer-feedback-link" target="_blank"
+            <a id="footer-feedback-link" class="yg-submit-feedback-link" target="_blank"
               href="https://forms2.service.yukon.ca/content/yukon-forms/ca/en/hpw/submit-feedback-about-your-digital-service-experience.html?onlineService=Yukon.ca%20Bootstrap%205%20template">Submit
               website feedback</a>
           </div>
