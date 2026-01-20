@@ -202,15 +202,19 @@ pre.prettyprint {
   font-style: italic;
 }
 
+.yukon-news-release-archive .mb-12 {
+  margin-bottom: 3rem;
+}
+
 // Field labels
-.field__label {
+.yukon-news-release-archive .field__label {
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 // News release images
-.field.news-field-featured-image img {
+.yukon-news-release-archive .field.news-field-featured-image img {
   float: right;
   margin-left: 6rem;
   margin-bottom: 3rem;
