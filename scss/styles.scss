@@ -161,6 +161,50 @@ pre.prettyprint {
   padding: 1rem;
 }
 
+// Blockquote formatting (particularly for news articles)
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+
+  background-image: url(../images/quotes.svg);
+  background-repeat: no-repeat;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2.25rem;
+}
+
+.blockquote .content {
+  margin-top: 1.5rem;
+}
+
+.blockquote> :last-child {
+  margin-bottom: 0;
+}
+
+.blockquote .blockquote-footer {
+  padding-left: 2.75rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.blockquote-footer::before {
+  content: none;
+}
+
+// Hidden elements
+.hidden {
+  display: none;
+}
+
+// Field labels
+.field__label {
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 // Alert button icons
 // via https://getbootstrap.com/docs/5.3/components/alerts/#icons
 svg.bi {
