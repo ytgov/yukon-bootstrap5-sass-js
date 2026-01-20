@@ -205,6 +205,13 @@ pre.prettyprint {
   margin-bottom: 1.5rem;
 }
 
+// News release images
+.field.news-field-featured-image img {
+  float: right;
+  margin-left: 6rem;
+  margin-bottom: 3rem;
+}
+
 // Alert button icons
 // via https://getbootstrap.com/docs/5.3/components/alerts/#icons
 svg.bi {
