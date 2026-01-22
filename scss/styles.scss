@@ -220,6 +220,28 @@ pre.prettyprint {
   margin-bottom: 3rem;
 }
 
+.yukon-news-release-archive .bg-alert-background {
+  background-color: rgb(255 244 228);
+}
+
+.yukon-news-release-archive .text-alert-text {
+  color: rgb(68 65 66);
+}
+
+// SVG alert icons
+.yukon-news-release-archive svg.svg-inline--fa, .yukon-news-release-archive svg.svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.yukon-news-release-archive svg.svg-inline--fa {
+  display: inline-block;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+}
+
+
 // Alert button icons
 // via https://getbootstrap.com/docs/5.3/components/alerts/#icons
 svg.bi {
