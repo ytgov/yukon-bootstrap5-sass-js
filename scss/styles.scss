@@ -126,7 +126,6 @@ $offcanvas-padding-x: 1.5rem;
 //
 
 // @import "icon-list";
-@import "aurora-town";
 @import "yt-header";
 
 body {
@@ -149,7 +148,6 @@ blockquote+h2 {
 
 // TODO - add media breakpoints
 .yt-main-heading {
-  max-width: 40rem;
 }
 
 // Pretty-printing code blocks
@@ -284,28 +282,6 @@ svg.bi {
 .footer-left {
   position: relative;
 }
-
-.footer-left:after {
-  content: "";
-  position: absolute;
-  right: -40%;
-  top: 0;
-  background-image: url(../images/Aurora-small-mobile.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 90%
-}
-
-@media (min-width:767px) {
-  .footer-left:after {
-    background-image: url(../images/Aurora-main.svg);
-    top: -30px;
-    width: 70%;
-    right: -20%
-  }
-}
-
 
 
 .footer-logos {
